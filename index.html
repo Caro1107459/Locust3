@@ -1,0 +1,130 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+    <title>蝗灾</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #container {
+            width: 800px;
+            margin: 20px;
+            position: relative;
+        }
+
+        #title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #player {
+            width: 800px;
+            height: 450px;
+            background-color: #000;
+        }
+
+        #button-row {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+            top: 0;
+        }
+
+        #likeButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        #coinButton,
+        #collectButton,
+        #shareButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+     .close-btn {
+            cursor: pointer;
+            color: #f00;
+            float: right;
+            font-size: 18px;
+        }
+
+     .bold {
+            font-weight: bold;
+        }
+
+     .blue {
+            color: darkblue;
+        }
+
+     .small-text {
+            font-size: 14px;
+        }
+
+     .divider {
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">【花小烙】古代大旱之后为啥总会发生蝗灾而不是别的虫灾？【蝗虫篇一】</div>
+        <div id="player"></div>
+        <div id="button-row">
+            <button id="likeButton">点赞</button>
+            <button id="coinButton">投币</button>
+            <button id="collectButton">收藏</button>
+            <button id="shareButton">转发</button>
+        </div>
+        <hr class="divider">
+        <p>实在想不到简介该写啥了= =</p>
+    </div>
+
+    <script src="https://player.polyv.net/script/player.js"></script>
+    <script>
+        var player;
+
+        function initPlayer() {
+            player = polyvPlayer({
+                wrap: '#player',
+                width: '100%',
+                height: 450,
+                vid: 'g9e4d25871f0e11511158002b3c3cf0b_g'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initPlayer);
+    </script>
+
+</body>
+</html>
